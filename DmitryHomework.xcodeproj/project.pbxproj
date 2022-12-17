@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0A7D6BAB294E42C400E50542 /* DmitryHomework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7D6BAA294E42C400E50542 /* DmitryHomework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7D6BB2294E433300E50542 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D6BB1294E433300E50542 /* HomeViewController.swift */; };
+		0A7D6BB5294E487500E50542 /* OtusHomework in Frameworks */ = {isa = PBXBuildFile; productRef = 0A7D6BB4294E487500E50542 /* OtusHomework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A7D6BA7294E42C400E50542 /* DmitryHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DmitryHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7D6BAA294E42C400E50542 /* DmitryHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DmitryHomework.h; sourceTree = "<group>"; };
+		0A7D6BB1294E433300E50542 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7D6BB5294E487500E50542 /* OtusHomework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				0A7D6BAA294E42C400E50542 /* DmitryHomework.h */,
+				0A7D6BB1294E433300E50542 /* HomeViewController.swift */,
 			);
 			path = DmitryHomework;
 			sourceTree = "<group>";
@@ -78,6 +83,9 @@
 			dependencies = (
 			);
 			name = DmitryHomework;
+			packageProductDependencies = (
+				0A7D6BB4294E487500E50542 /* OtusHomework */,
+			);
 			productName = DmitryHomework;
 			productReference = 0A7D6BA7294E42C400E50542 /* DmitryHomework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +101,7 @@
 				TargetAttributes = {
 					0A7D6BA6294E42C400E50542 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -105,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 0A7D6B9D294E42C400E50542;
+			packageReferences = (
+				0A7D6BB3294E487400E50542 /* XCRemoteSwiftPackageReference "OtusHomework" */,
+			);
 			productRefGroup = 0A7D6BA8294E42C400E50542 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7D6BB2294E433300E50542 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 		0A7D6BAF294E42C400E50542 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -267,6 +281,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +292,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +301,7 @@
 		0A7D6BB0294E42C400E50542 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -294,6 +311,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A7D6BB3294E487400E50542 /* XCRemoteSwiftPackageReference "OtusHomework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NikkoGladkko/OtusHomework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A7D6BB4294E487500E50542 /* OtusHomework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A7D6BB3294E487400E50542 /* XCRemoteSwiftPackageReference "OtusHomework" */;
+			productName = OtusHomework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A7D6B9E294E42C400E50542 /* Project object */;
 }
